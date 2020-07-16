@@ -1,9 +1,10 @@
-import React, { Suspense, lazy } from 'react';
+import React from 'react';
 import ReactDOM from "react-dom";
 import { HashRouter, Route, Switch } from "react-router-dom";
-import { Loader } from './utils/Loader/Loader';
+import { Loader } from './utils/Loader';
+import { Navbar } from './Components/Navbar';
 
-const Navbar = lazy(() => import("./Components/Navbar/Navbar"));
+const Navbar = lazy(() => import("./components/Navbar"));
 function App() {
   return (
     <HashRouter>
